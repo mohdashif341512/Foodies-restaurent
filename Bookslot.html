@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="mohdtwo.css">
+    </head>
+    <body>
+        <form action=""  method="GET">
+          <div id="head">
+                <div class="headone">
+                  <div id="jss">
+                    <ul>
+                        <li onclick="display('insert')"><button type="button" id="apply" name="action" >Register</button></li>
+                        <li onclick="display('login')" ><button type="button"  id="apply"  name="action" >Login</button></li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <div id="insert" class="form-fill">
+                            <label >Employe_name</label><br>
+                            <input type="text"  name="Employe_name" placeholder="Enter name" ><br>
+                            <label >Employe_Identity_Type</label><br>
+                            <input type="text" name="Employe_Identity_Type" placeholder="Enter id type "><br>
+                            <label >Employe_Post</label><br>
+                            <input type="text"  name="Employe_Post"placeholder="Enter "placeholder="Enter post " ><br>
+                            <label >Employe_address</label><br>
+                            <input type="text" name="Employe_address"placeholder="Enter city "><br>
+                            <label >Employe_contactNo</label><br>
+                            <input type="text" name="Employe_contactNo"placeholder="Enter mobile"><br>
+                            <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/restro/employe/register">
+                              Insert
+                          </button>
+                    </div>
+                 </div>
+                  <div class="main">
+                      <div id="login" class="form-fill">
+                              <label >Employe_id</label><br>
+                              <input type="text"  name="Employe_id"placeholder="Enter id" ><br>
+                            <br>
+                            <button type="submit" class="visible btn"   id="bbbb"   formaction="http://localhost:8080/admin/restro">
+                              login
+                          </button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        <Script src="mm.js" ></Script>
+    </body>
+</html>
+
+
