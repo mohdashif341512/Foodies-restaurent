@@ -1,0 +1,96 @@
+
+#header{
+background-color: orange;
+/* margin-bottom: 10px; */
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#head{
+    width: 500px;
+    margin: 60px 400px;
+    height: 300px;
+    /* background-image: url(back.jpg); */
+  background-position: fixed;
+    background-size: cover;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.main{
+    margin: 10px 150px;
+  
+}
+#login{
+    display: none;
+}
+
+#restro{
+    display: none;
+}
+#voucher{
+    display: none;
+}
+#Feedback{
+    display: none;
+}
+
+.visible btn {
+    display: none;
+}
+
+#bbbb{
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    background-color: goldenrod;
+    cursor: pointer;
+    height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: .5rem;
+    border-radius: 30px;
+    margin: 5px;
+    width:300px ;
+    height: 40px;
+}
+
+#apply {
+    border:0px;
+    margin:10px 15px;
+    /* padding:6px; */
+    text-align: center;
+    width:220px;
+    height: 40px;
+    background-color:white;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+    border-radius: 10px;
+    cursor: pointer;
+}  
+.top{
+    background-color: black;
+    color: white;
+}
+#banner{
+    /* background-image: url(foodies.jpeg); */
+    background-image: url(back.jpg);
+
+    position: fixed;
+    opacity: .9;
+    height: 100vh;
+}
+
+
+select{
+    padding: .1rem;
+    border-radius: 30px;
+    width: 300px;
+    height: 40px;
+}

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="foodiescss.css">
+    </head>
+    <body>
+        <div class="top">
+           <marquee behavior="alternate" direction=""><h2> Admin Portal</h2></marquee>
+        </div>
+        <div id="header">
+                <button onclick="display('insert')" type="button" id="apply" name="action" >Employe Register</button>
+                <button onclick="display('restro')" type="button" id="apply" name="action" >Restaurent Register</button>
+                <button onclick="display('login')"  type="button"  id="apply"  name="action" >Get Data</button>
+                <button onclick="display('voucher')" type="button" id="apply" name="action" >Voucher</button>
+                <button onclick="display('Feedback')" type="button" id="apply" name="action" >Feedback</button>
+          </div>
+          <div id="banner">
+            <form action=""  method="GET">
+                <div id="head">
+                      <div class="headone">
+                        <div class="main">
+                          <div id="insert" class="form-fill">
+                                  <input type="text"  name="Employe_name" placeholder="Enter name" ><br>
+                                  <input type="text" name="Employe_Identity_Type" placeholder="Enter id type "><br>
+                                  <input type="text"  name="Employe_Post" placeholder="Enter post " ><br>
+                                  <input type="text" name="Employe_address" placeholder="Enter city "><br>
+                                  <input type="text" name="Employe_contactNo"placeholder="Enter mobile"><br><br>
+                                  <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/restro/employe/register">Insert</button>
+                          </div>
+                       </div>
+                        <div class="main">
+                            <div id="login" class="form-fill">
+                              <!-- select xyz from abc where pqr=ijk -->
+                                 <input type="text"  name="Employe_id"placeholder="Enter employe id" ><br>
+                                  <br>
+                                  <button type="submit" class="visible btn"   id="bbbb"   formaction="http://localhost:8080/admin/restro">Get Details</button>
+                                  <br><br>
+                                  <input type="text"  name="Employe_name"placeholder="Get details by name " ><br>
+                                  <br>
+                                  <button type="submit" class="visible btn"   id="bbbb"   formaction="http://localhost:8080/name">Get Details</button>
+                                  <br>
+                                  <!-- <input type="text"  name="Restaurent_type"placeholder="Enter Restaurent type" ><br>
+                                  <br>
+                                  <button type="submit" class="visible btn"   id="bbbb"   formaction="http://localhost:8080/admin/restro/details">login</button> -->
+                            </div>
+                        </div>
+                        <div class="main">
+                              <div id="restro" class="form-fill">
+                                  <input type="text"  name="Restaurent_name" placeholder="Enter Restaurent_name" ><br>
+                                  <input type="text" name="Restaurent_owner" placeholder="Enter Restaurent_owner "><br>
+                                  <input type="text"  name="Restaurent_type"placeholder="Enter Restaurent_type " ><br>
+                                  <input type="text" name="Restaurent_address" placeholder="Enter city "><br>
+                                  <input type="text" name="Restaurent_contactNo" placeholder="Enter mobile"><br><br>
+                                  <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/newrestro/add/register">Register</button>
+                              </div>
+                        </div>
+                        <div class="main">
+                              <div id="voucher">
+                                  <form action=" " method="GET">
+                                      <select name="discount_id" id="dis">
+                                        <option value="0" name="0" selected>Select voucher</option>
+                                          <option value="1" name="1">mega</option>
+                                          <option value="2" name="2">foody</option>
+                                          <option value="3" name="3">prime</option>
+                                          <option value="4" name="1">chilli</option>
+                                          <option value="5" name="2">testlover</option>
+                                          <option value="6" name="3">none</option>
+                                      </select>   
+                                      <br>
+                                      <br>
+                                      <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/voucher">Redeem</button>
+                                      <br><br>
+                                      <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/admin/fetch/allemployedetails">All Employe Detils</button>
+                                   </form>
+                              </div>
+                        </div>
+                        <div class="main">
+                          <div id="Feedback" class="form-fill">
+                                  <input type="text"  name="feedbacks" placeholder="Give feedback" ><br>
+                                  <input type="text"  name="rate" placeholder="Rate us" ><br>
+                                  <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/feedback/get">Give feedback</button>
+                                   <!-- <input type="text"  name="feedbacks" placeholder="feedback" ><br> -->
+                                  <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/admin/fetch/allfeedbacks">Get All Feedbacks</button>
+                                  <!-- <input type="text"  name="rate" placeholder="Get feedback by rate" ><br>
+                                  <button type="submit" class="visible btn" id="bbbb"  formaction="http://localhost:8080/feedbacks/byrating">Get Details</button> --> -->
+                                </div>
+                       </div>
+                      </div>
+                  </div>
+                </form>
+          </div>
+        <Script src="foodies.js" ></Script>
+    </body>
+</html>
+
+
