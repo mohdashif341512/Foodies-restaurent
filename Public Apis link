@@ -1,1 +1,83 @@
 https://documenter.getpostman.com/view/24212501/2s8YYFr3pV
+
+
+curl --location --request GET 'localhost:8080/restro/employe/register' \
+--data-raw '{
+    "Employe_name": "",
+    "Employe_Identity_Type":" ",
+    "Employe_Post":" ",
+    "Employe_address":" ",
+    "Employe_contactNo":" "
+}'
+
+
+curl --location --request GET 'localhost:8080/admin/restro' \
+--data-raw '{
+    "Employe_id": ""
+}'
+
+
+
+curl --location --request GET 'localhost:8080/name' \
+--data-raw '{
+    "Employe_name":""
+}'
+
+
+curl --location --request GET 'localhost:8080/voucher' \
+--data-raw '{
+    "discount_id": ""
+}'
+
+
+curl --location --request GET 'localhost:8080/allemployedetails' \
+--data-raw '{
+    "Get on click":" "
+}'
+
+
+
+curl --location --request GET 'localhost:8080/signup' \
+--data-raw '{
+    "email_id":"",
+    "password":"",
+    "name":""
+}'
+
+
+
+
+
+curl --location --request GET 'localhost:8080/restro/employe/mergedata' \
+--data-raw '{
+    "Employe_name": "",
+    "Employe_Identity_Type":" ",
+    "Employe_Post":" ",
+    "Employe_address":" ",
+    "Employe_salary":" ",
+    "Employe_contactNo":" "
+}'
+
+
+
+curl --location --request GET 'localhost:8080/feedback/get' \
+--data-raw '{
+    "feedbacks":"",
+    "rate":""
+}'
+
+
+
+curl --location --request GET 'localhost:8080/admin/fetch/allfeedbacks' \
+--data-raw '{
+    "Just on click":""
+}'
+
+
+
+curl --location --request GET 'localhost:8080/restro/employe/salaryupdate' \
+--data-raw '{
+    "Employe_Post":""
+}'
+
+
